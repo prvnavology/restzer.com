@@ -1,0 +1,106 @@
+@media screen and (max-width:991px) {
+    .logo {
+        display: none;
+    }
+
+    .logo-hidden {
+        display: block;
+    }
+
+    .desktop-hidden-menu {
+        display: block;
+    }
+
+    .main-navbar .desktop-navlist2 {
+        display: none;
+    }
+
+    .main-navbar .desktop-navlist1 {
+        width: 100%;
+    }
+
+
+    .desktop-menu {
+        justify-content: space-between;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .main-navbar ul {
+        flex-direction: column;
+        z-index: 50;
+        width: 100%;
+    }
+
+    .main-navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .desktop-navlist1 {
+        margin: 0 auto;
+    }
+
+    .main-navbar ul li a:hover {
+        color: #AC4E16;
+        background-color: transparent;
+    }
+
+    .main-navbar li {
+        padding: 20px auto;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .main-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        background-color: #000;
+        transform: translateY(100%);
+        transition: all 0.2s linear;
+        z-index: 50;
+        justify-content: flex-start;
+        color: #fff;
+    }
+
+    .menuToggle .main-navbar {
+        transform: translateY(0);
+   
+    }
+
+
+    .main-navbar ul li a {
+        color: #fff;
+        text-align: left;
+        font-size: 12px;
+        line-height: 10px;
+    }
+
+    .main-navbar ul li a.active {
+        color: #AC4E16;
+    }
+
+
+
+
+    .main-navbar .dropdown-arrow {
+        display: none;
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        color: #fff;
+        text-align: end;
+    }
+
+}
