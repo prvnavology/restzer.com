@@ -20,12 +20,17 @@ h4,
 h5,
 h6 {
   font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+}
+p{
+  margin-bottom: 0;
 }
 
 ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+ 
 }
 
 a {
@@ -103,7 +108,7 @@ img {
   padding: 5px;
   display: inline-block;
   color: #545556;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 40px;
   transition: 0.5sec all ease-in;
   font-size: 13px;
@@ -256,6 +261,8 @@ img {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 15px auto;
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .home-card-image {
@@ -306,27 +313,51 @@ img {
 
 /* Home Cards CSS End*/
 
-.home-page-featured-cards-wrapper h3 {
-  text-align: center;
-  font-size: 35px;
-  font-weight: 600;
+ /* Home Page Featured Hotels CSS Start */
+
+.home-featured-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.home-page-featured-cards .home-card .card-content {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(100%);
-  padding: 20px;
-  transition: 1.5s opacity ease-in-out;
+.home-featured-card {
+  width: 48%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.home-featured-card-image {
+  overflow: hidden;
+  height: 280px;
+}
+.home-featured-card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-featured-card-content ul {
+  list-style-type: disc;
+  margin-left: 17px;
+}
+.home-featured-card-content{
+ padding: 15px;
+   min-height:310px; 
+}
+.home-featured-card-content a {
+  background: #AC4E16;
+  width: 110px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  color: #fff;
 }
 
-.home-page-featured-cards .home-card:hover .card-content {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-}
 
-
+ /* Home Page Featured Hotels CSS End*/
 
 /* Home Page Signup CSS Start */
 .home-signup-section {

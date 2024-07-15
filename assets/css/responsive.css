@@ -62,7 +62,7 @@
         height: 100%;
         width: 100%;
         padding: 50px;
-        background-color: #000;
+        background-color: #f5b793;
         transform: translateY(100%);
         transition: all 0.2s linear;
         z-index: 50;
