@@ -113,7 +113,7 @@ img {
   font-size: 1rem;
   padding: 5px;
   display: inline-block;
-  color: #787b7e;
+  color: #7d7979;
   font-weight: 600;
   line-height: 50px;
   transition: 0.5sec all ease-in;
@@ -409,6 +409,7 @@ img {
 .home-signup-section {
   padding: 40px 0;
 background-color: #DFE0DF;
+background:linear-gradient(to top ,#DFE0DF,#bfc1bf);
 }
 
 .home-signup-wrapper {
@@ -418,7 +419,7 @@ background-color: #DFE0DF;
 
 .home-signup-wrapper h3 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .home-signup-input-wrapper {
@@ -507,7 +508,7 @@ background-color: #DFE0DF;
 
 .footer-links ul li a,
 .footer-quick-links ul li a {
-  color: #787b7e;
+  color: #7d7979;
   cursor: pointer;
   font-weight: 500;
   text-transform: uppercase;
@@ -734,6 +735,7 @@ color: #545556;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .after-cards-text-group {
   width: 48%;
   gap: 20px;
@@ -742,18 +744,47 @@ color: #545556;
   margin: 0 auto 20px auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
+  background: #f4c9b1;
 }
+
 
 
 .after-cards-text-group h3 {
   font-size: 20px;
   margin-bottom: 8px;
+  max-width: 400px;
 }
-.after-cards-text-group p{
-  color: #545556;
+.after-cards-text-group p {
+  color: #464748;
   font-size: 15px;
-  font-weight: 6 00;
+  font-weight: 600;
+  text-align: center;
+  max-width: 485px;
+  margin: 0 auto;
 }
+.text-cards-icon-group {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+    padding: 10px 0;
+  align-items: normal;
+}
+.text-card-icons {
+  display: flex !important;
+  width: 40px;
+  height:40px;
+  background: #AC4E16;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius:10px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  }
+ 
+
 
 /* After Cards Text CSS End */
 
