@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 /* Global CSS Start */
 
 * {
@@ -10,7 +14,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  /* font-family: "Source Sans 3", sans-serif; */
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Roboto Flex", sans-serif;
 }
 
 h1,
@@ -19,10 +25,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", sans-serif;
-  margin-bottom: 0;
+  /* font-family: "Source Sans 3", sans-serif; */
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Roboto Flex", sans-serif;
 }
-p{
+
+p {
   margin-bottom: 0;
 }
 
@@ -30,7 +38,7 @@ ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
- 
+
 }
 
 a {
@@ -55,8 +63,9 @@ img {
 
 /*Header CSS Start */
 .logo img,
-.logo-hidden img {
-  width: 50%;
+.logo-hidden img,
+.logo-bottom img {
+  width: 65%;
   text-align: center;
   max-width: 250px;
   vertical-align: middle;
@@ -71,6 +80,7 @@ img {
 .logo-hidden {
   display: none;
 }
+
 .site-header {
   position: sticky;
   top: 0;
@@ -79,7 +89,8 @@ img {
   width: 100%;
   margin: 0 auto;
   z-index: 999;
-  background-color: #f5dacb;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .site-header .container {
@@ -107,14 +118,15 @@ img {
   font-size: 1rem;
   padding: 5px;
   display: inline-block;
-  color: #545556;
+  color: #787b7e;
   font-weight: 600;
   line-height: 40px;
   transition: 0.5sec all ease-in;
-  font-size: 13px;
+  font-size: 15px;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .desktop-hidden-menu {
@@ -173,7 +185,6 @@ img {
   display: none;
   color: #000;
   width: 30px;
-  /* height: 20px; */
   text-align: right;
   cursor: pointer;
   margin: auto 0;
@@ -258,7 +269,7 @@ img {
 .home-card {
   width: 47%;
   text-align: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 15px auto;
   position: relative;
   border-radius: 5px;
@@ -270,6 +281,7 @@ img {
   height: 300px;
 
 }
+
 .home-card-image img {
   width: 100%;
   height: 100%;
@@ -279,7 +291,8 @@ img {
   object-fit: cover;
   transition: 0.5s all ease-in-out;
 }
-.home-card:hover .home-card-image img{
+
+.home-card:hover .home-card-image img {
   transform: scale(1.3);
 }
 
@@ -317,11 +330,17 @@ img {
 
 /* Home Cards CSS End*/
 
- /* Home Page Featured Hotels CSS Start */
- .home-page-featured-cards h2 {
+/* Home Page Featured Hotels CSS Start */
+.home-page-featured-cards {
+  background-color: #dc7032;
+  padding: 50px 0 60px 0;
+}
+
+.home-page-featured-cards h2 {
   text-align: center;
   margin-bottom: 15px;
-  font-size: 35px;
+  font-size: 40px;
+  color: #fff;
 }
 
 .home-featured-cards-wrapper {
@@ -330,59 +349,81 @@ img {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 15px;
+
 }
 
 .home-featured-card {
   width: 48%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .home-featured-card-image {
   overflow: hidden;
   height: 280px;
 }
-.home-featured-card-image img{
+
+.home-featured-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.5s all ease-in-out;
 }
-.home-featured-card-image img:hover{
-transform: scale(1.3);
+
+.home-featured-card-image img:hover {
+  transform: scale(1.3);
 }
+
 .home-featured-card-content ul {
   list-style-type: disc;
   margin-left: 17px;
 }
-.home-featured-card-content{
- padding: 15px;
-   min-height:310px; 
+
+.home-featured-card-content {
+  padding: 15px;
+  min-height: 285px;
+  background-color: #fff;
 }
+
 .home-featured-card-content a {
   background: #AC4E16;
-
   padding: 8px 20px;
   border-radius: 5px;
   margin-top: 10px;
   display: inline-block;
   color: #fff;
 }
-.home-featured-card-content a:hover{
+
+.home-featured-card-content a:hover {
   background-color: #f87f39;
 }
 
+.home-page-guide-cards {
+  padding: 50px 0;
+}
 
- /* Home Page Featured Hotels CSS End*/
+.home-page-guide-cards h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Home Page Featured Hotels CSS End*/
 
 /* Home Page Signup CSS Start */
 .home-signup-section {
   padding: 40px 0;
-  background: #e5bca7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .home-signup-wrapper {
   text-align: center;
+
+}
+
+.home-signup-wrapper h3 {
+  text-align: center;
+  font-size: 35px;
 }
 
 .home-signup-input-wrapper {
@@ -391,19 +432,19 @@ transform: scale(1.3);
 }
 
 .home-signup-input {
-  width: 60%;
+  width: 50%;
   display: inline-block;
   font-size: 16px;
   padding: 10px 15px;
   outline: none;
-  border: none;
+  border: 1px solid #AC4E16;
 }
 
 .home-signup-submit-button {
   display: inline-block;
   background: #AC4E16;
   color: #fff;
-  padding: 10px 25px;
+  padding: 11px 25px;
   font-size: 16px;
   outline: none;
   border: none;
@@ -412,7 +453,8 @@ transform: scale(1.3);
 }
 
 .home-signup-submit-button:hover {
-  background-color: #ef884d8c;
+  background-color: #df5d12;
+  color: #fff;
 }
 
 /* Home Page Signup CSS End */
@@ -459,7 +501,7 @@ transform: scale(1.3);
 .footer-links ul,
 .footer-quick-links ul {
   margin-top: 15px;
-  padding-left: 0;
+
 }
 
 .footer-links ul li,
@@ -469,7 +511,7 @@ transform: scale(1.3);
 
 .footer-links ul li a,
 .footer-quick-links ul li a {
-  color: #545556;
+  color: #787b7e;
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
@@ -501,9 +543,213 @@ transform: scale(1.3);
 .copyright {
   padding: 20px 0 10px 0;
   text-align: center;
-   color: #545556;
-  background-color: #f1d4c3;
+  color: #fff;
+  background-color: #dc7032;
   margin: auto 0;
-font-weight: 500;
+  font-weight: 500;
 }
+
 /* Copyright Section CSS End */
+
+/* Pages CSS Start */
+
+
+/* Pages Banner CSS Start */
+.pages-banner-image {
+  height: 430px;
+}
+
+.pages-banner-text h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.pages-banner-text h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.pages-banner-text-group {
+  animation: slideside 1.5s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(-200px);
+  text-align: center;
+}
+
+@keyframes slideside {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pages Banner CSS End */
+.pages-intro {
+  padding: 45px 10px;
+}
+
+.pages-intro-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.checked {
+  color: #AC4E16;
+}
+
+.pages-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.pages-card {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.pages-card:last-child {
+  width: 97%;
+}
+
+
+.pages-card-image {
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+}
+
+.pages-card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.6s all ease-in-out;
+}
+
+.pages-card-image img:hover {
+  transform: scale(1.2);
+}
+
+.pages-card-content-group {
+  margin: 10px 0;
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  }
+  .pages-card-content ul li {
+  list-style-type: disc;
+  margin-left: 17px;
+  font-weight: 500;
+}
+
+.pages-card-content {
+  padding: 20px;
+  width: 100%;
+  }
+  .pages-card-content p,.pages-card-content ul li{
+    color: #545556;
+  }
+
+
+.pages-card-content h2 {
+  margin-bottom: 5px;
+}
+
+.subpage-exp-content {
+  margin-top: 10px;
+  display: none;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.btn-darkred-block {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #AC4E16;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  min-width: 115px;
+  line-height: 14px;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-darkred-block:hover {
+  background: #df5d12;
+  transform: scale(1.05);
+}
+
+.pages-link-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #AC4E16;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 20px;
+  font-weight: 400;
+  transition: 0.3s all ease-in-out;
+  min-width: 115px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.pages-link-btn:hover {
+  background: #df5d12;
+  transform: scale(1.05);
+}
+
+.text-left {
+  text-align: left;
+}
+.heading-like {
+  font-weight: 700;
+  color: #000;
+}
+/* Pages Cards Section CSS Start */
+.pages-cards-wrapper h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Pages Cards Section CSS Start */
+
+/* After Cards Text CSS Start */
+
+.after-cards-text {
+  padding: 50px 10px;
+}
+.after-cards-text-group {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.after-cards-text-group h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.after-cards-text-group p{
+  color: #545556;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* After Cards Text CSS End */
+
+/* Pages CSS End */
