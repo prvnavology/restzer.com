@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
- }
+}
 
 h1,
 h2,
@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
- }
+}
 
 p {
   margin-bottom: 0;
@@ -56,18 +56,30 @@ img {
 
 /*Header CSS Start */
 .logo img,
-.logo-hidden img,
-.logo-bottom img {
-  width: 70%;
+.logo-hidden img {
+  width: 90%;
   text-align: center;
   max-width: 250px;
   vertical-align: middle;
 }
 
-.logo a {
-  /* display: inline-block; */
-  width: 100%;
+.logo-bottom img {
+  width: 60%;
   text-align: center;
+  max-width: 250px;
+}
+
+.logo a,
+.logo-hidden a {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+.logo-bottom a {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
 }
 
 .logo-hidden {
@@ -98,6 +110,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .main-navbar {
   display: flex;
   justify-content: space-evenly;
@@ -105,6 +118,7 @@ img {
   align-items: center;
   width: 100%;
 }
+
 .main-navbar ul li a {
   font-size: 1rem;
   padding: 5px;
@@ -125,17 +139,17 @@ img {
 }
 
 .desktop-navlist1 {
-  width: 40%;
+  width: 41%;
   margin: auto 0;
 }
 
 .logo {
-  width: 20%;
+  width: 13%;
   margin: auto;
 }
 
 .desktop-navlist2 {
-  width: 40%;
+  width: 46%;
   margin: auto 0;
   text-align: center;
 }
@@ -316,7 +330,7 @@ img {
 }
 
 .card-content a h3 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 /* Home Cards CSS End*/
@@ -377,6 +391,11 @@ img {
   background-color: #fff;
 }
 
+.home-featured-card-content p,
+.home-featured-card-content ul li {
+  font-weight: 500;
+}
+
 .home-featured-card-content a {
   background: #AC4E16;
   padding: 8px 20px;
@@ -404,8 +423,8 @@ img {
 /* Home Page Signup CSS Start */
 .home-signup-section {
   padding: 40px 0;
-background-color: #DFE0DF;
-background:linear-gradient(to top ,#DFE0DF,#bfc1bf);
+  background-color: #DFE0DF;
+  background: linear-gradient(to top, #DFE0DF, #bfc1bf);
 }
 
 .home-signup-wrapper {
@@ -466,29 +485,33 @@ background:linear-gradient(to top ,#DFE0DF,#bfc1bf);
 
 .footer-icons {
   text-align: center;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 15px 10px;
-  
 }
 
-.footer-icons i:hover {
-  transform: scale(1.3);
-}
+
 
 .footer-items h3 {
   color: #000;
 }
 
 .footer-icons i {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   font-size: 16px;
   color: #fffcfc;
   background: #AC4E16;
-  line-height: 30px;
+  line-height: 35px;
   margin: 0 5px;
   transition: 0.6s all ease-out;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons i:hover {
+  transform: scale(1.3);
 }
 
 .footer-links ul,
@@ -523,11 +546,10 @@ background:linear-gradient(to top ,#DFE0DF,#bfc1bf);
   color: #AC4E16;
 }
 
-.logo-bottom img {
-  width: 100%;
-  max-width: 150px;
+.logo-bottom {
   text-align: center;
 }
+
 
 /* Footer CSS End */
 
@@ -535,11 +557,13 @@ background:linear-gradient(to top ,#DFE0DF,#bfc1bf);
 /* Copyright Section CSS Start */
 .copyright {
   padding: 20px 0 10px 0;
-  text-align: center;
-color: #545556;
   background-color: #dc703270;
-  margin: auto 0;
-  font-weight: 500;
+ }
+.copyright p{
+  text-align: center;
+  color: #545556;
+   margin: auto 0;
+  font-weight: 600;
 }
 
 /* Copyright Section CSS End */
@@ -585,11 +609,13 @@ color: #545556;
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .pages-intro-wrapper p {
   font-size: 15px;
   color: #545556;
   font-weight: 500;
 }
+
 .checked {
   color: #AC4E16;
 }
@@ -609,6 +635,7 @@ color: #545556;
   border-radius: 5px;
   overflow: hidden;
 }
+
 .pages-card:last-child {
   width: 97%;
 }
@@ -638,21 +665,26 @@ color: #545556;
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
-  }
-  .pages-card-content ul li {
+  flex-wrap: wrap;
+}
+
+.pages-card-content ul li {
   list-style-type: disc;
   margin-left: 17px;
-  font-weight: 500;
-  font-size: 15px;
+
 }
 
 .pages-card-content {
   padding: 20px;
   width: 100%;
-  }
-  .pages-card-content p,.pages-card-content ul li{
-    color: #545556;
-  }
+}
+
+.pages-card-content p,
+.pages-card-content ul li {
+  color: #545556;
+  font-weight: 500;
+  font-size: 15px;
+}
 
 
 .pages-card-content h2 {
@@ -715,16 +747,19 @@ color: #545556;
 .text-left {
   text-align: left;
 }
+
 .heading-like {
   font-weight: 700;
   color: #000;
 }
+
 /* Pages Cards Section CSS Start */
 .pages-cards-wrapper h3 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
 }
+
 /* Pages Cards Section CSS Start */
 
 /* After Cards Text CSS Start */
@@ -732,6 +767,7 @@ color: #545556;
 .after-cards-text {
   padding: 50px 10px;
 }
+
 .after-cards-text-wrapper {
   display: flex;
   justify-content: center;
@@ -756,36 +792,39 @@ color: #545556;
   margin-bottom: 8px;
   max-width: 400px;
 }
+
 .after-cards-text-group p {
   color: #464748;
   font-size: 15px;
   font-weight: 600;
-  text-align: center;
-  max-width: 485px;
+  max-width: 510px;
   margin: 0 auto;
 }
+
 .text-cards-icon-group {
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  gap: 30px;
-    padding: 10px 0;
+  gap: 20px;
+  padding: 10px 0;
   align-items: normal;
 }
+
 .text-card-icons {
   display: flex !important;
   width: 40px;
-  height:40px;
+  height: 40px;
   background: #AC4E16;
   color: #fff;
   align-items: center;
   justify-content: center;
-  border-radius:10px;
+  border-radius: 10px;
   font-size: 20px;
   text-align: center;
   line-height: 30px;
-  }
- /* After Cards Text CSS End */
+}
+
+/* After Cards Text CSS End */
 
 /* Privacy Policy Page CSS Start */
 
@@ -795,20 +834,23 @@ section.privacy-policy-content {
 
 .privacy-policy-group {
   padding: 15px;
-   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
+
 .privacy-policy-group h3 {
   margin-bottom: 10px;
   font-size: 20px;
 }
+
 .privacy-policy-group p {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: #545556;
   max-width: 1100px;
- }
+  word-break: break-word;
+}
 
 /* Privacy Policy Page CSS End*/
 
@@ -816,36 +858,43 @@ section.privacy-policy-content {
 .terms-conditions-content {
   padding: 50px 0 0 0;
 }
+
 .terms-conditions-group {
   padding: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
+
 .terms-conditions-group h2 {
   margin-bottom: 8px;
 }
+
 .terms-conditions-group h3 {
   margin-bottom: 8px;
 
 }
+
 .terms-conditions-group h4 {
   margin-bottom: 8px;
   font-size: 15px;
 }
+
 .terms-conditions-group p {
   font-size: 15px;
   color: #545556;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 8px;
 }
-.terms-conditions-group ul{
+
+.terms-conditions-group ul {
   margin-bottom: 8px;
 }
+
 .terms-conditions-group ul li {
   color: #545556;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   list-style: disc;
   margin-left: 17px;
 }
