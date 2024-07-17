@@ -903,3 +903,84 @@ section.privacy-policy-content {
 /* Terms Conditons CSS End */
 
 /* Pages CSS End */
+
+
+/* Cookies CSS Start */
+
+#cookie-bar {
+  font-family: "Montserrat", sans-serif;
+  background: #AC4E16;
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  color: #fff;
+  width: 100%;
+}
+
+#cookie-bar p {
+  width: 85%;
+  float: left;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+}
+
+#cookie-bar button {
+  float: right;
+  background: #edb391;
+  border: none;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#cookie-bar button:hover {
+  color: #d75b14;
+  background: #fff;
+  
+}
+
+#cookie-bar a {
+  color: #fff;
+}
+
+#contentcookie {
+  padding: 20px 50px;
+  width: 80%;
+  margin: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.main-navbar > ul > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background: #AC4E16;
+  left: 0;
+  opacity: 0;
+}
+.main-navbar > ul > li > a.active::before {
+  opacity: 1;
+}
+.main-navbar ul li {
+  position: relative;
+  height: 100%;
+}
+.main-navbar ul li a {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+/* Cookies CSS End */
