@@ -411,7 +411,7 @@ img {
 }
 
 .home-featured-card-content a:hover {
-  background-color: #B76F06;
+  background-color: #FFB152;
 }
 
 .home-page-guide-cards {
@@ -470,7 +470,7 @@ img {
 }
 
 .home-signup-submit-button:hover {
-  background-color: #B76F06;
+  background-color: #FFB152;
   color: #fff;
 }
 
@@ -725,7 +725,7 @@ img {
 }
 
 .btn-darkred-block:hover {
-  background: #B76F06;
+  background: #FFB152;
   transform: scale(1.05);
 }
 
@@ -749,7 +749,7 @@ img {
 }
 
 .pages-link-btn:hover {
-  background: #B76F06;
+  background: #FFB152;
   transform: scale(1.05);
 }
 
