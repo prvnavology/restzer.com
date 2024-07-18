@@ -465,7 +465,7 @@ img {
   font-size: 16px;
   outline: none;
   border: none;
-  margin-left: -5px;
+  margin-left:4px;
   cursor: pointer;
 }
 
@@ -974,12 +974,4 @@ section.privacy-policy-content {
 /* Cookies CSS End */
 
 
-/* .main-navbar ul li {
-  position: relative;
-  height: 100%;
-}
-.main-navbar ul li a {
-  display: inline-flex;
-  align-items: center;
-  height: 100%;
-} */
+
