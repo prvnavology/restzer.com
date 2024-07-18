@@ -43,7 +43,7 @@
     }
 
     .main-navbar ul li a:hover {
-        color: #AC4E16;
+        color: #e09132;
         background-color: transparent;
     }
 
@@ -62,7 +62,7 @@
         height: 100%;
         width: 100%;
         padding: 50px;
-        background-color: #f5b793;
+        background-color: #ddb67b;
         transform: translateY(100%);
         transition: all 0.2s linear;
         z-index: 50;
@@ -84,7 +84,7 @@
     }
 
     .main-navbar ul li a.active {
-        color: #AC4E16;
+        color:#B76F06;
     }
 
 
