@@ -557,16 +557,13 @@ img {
 .logo-bottom {
   text-align: center;
 }
-
-
 /* Footer CSS End */
 
 
 /* Copyright Section CSS Start */
 .copyright {
   padding: 20px 0 10px 0;
-  /* background-color: #dc703270; */
-  background-color: #a58e74;
+   background-color: #a58e74;
  }
 .copyright p{
   text-align: center;
