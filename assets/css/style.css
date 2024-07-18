@@ -124,10 +124,10 @@ img {
   padding: 5px;
   display: inline-block;
   color: #7d7979;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 40px;
   transition: 0.5sec all ease-in;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -537,7 +537,7 @@ img {
   color: #7d7979;
   cursor: pointer;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 14px;
   text-decoration: none;
 }
