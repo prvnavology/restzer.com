@@ -760,6 +760,10 @@ img {
 .text-left {
   text-align: left;
 }
+.text-center {
+  text-align: center;
+}
+
 
 .heading-like {
   font-weight: 700;
