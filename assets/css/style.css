@@ -763,8 +763,6 @@ img {
 .text-center {
   text-align: center;
 }
-
-
 .heading-like {
   font-weight: 700;
   color: #000;
@@ -801,9 +799,6 @@ img {
   border-radius: 5px;
   background: #e1b989;
 }
-
-
-
 .after-cards-text-group h3 {
   font-size: 20px;
   margin-bottom: 8px;
@@ -916,10 +911,7 @@ section.privacy-policy-content {
   list-style: disc;
   margin-left: 17px;
 }
-
-
 /* Terms Conditons CSS End */
-
 /* Pages CSS End */
 
 
@@ -979,6 +971,9 @@ section.privacy-policy-content {
 .clear {
   clear: both;
 }
+/* Cookies CSS End */
+
+
 /* .main-navbar ul li {
   position: relative;
   height: 100%;
@@ -988,4 +983,3 @@ section.privacy-policy-content {
   align-items: center;
   height: 100%;
 } */
-/* Cookies CSS End */
