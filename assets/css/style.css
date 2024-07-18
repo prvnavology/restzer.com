@@ -863,6 +863,9 @@ section.privacy-policy-content {
   max-width: 1100px;
   word-break: break-word;
 }
+.privacy-policy-group a{
+  color: #B76F06;
+}
 
 /* Privacy Policy Page CSS End*/
 
